@@ -316,14 +316,15 @@ body {
     margin-left: 100px;
 }
 .icon-text.feature-box-2 .icon i{
-    background-color: #AC161D;
-    padding: 20px 21px;
-    border-radius: 70px;
+    padding: 15px 15px;
     box-shadow: 0 0 2px #888;
+    font-size: 15px;
     display: inline-block;
     float: left;
-    margin-left: -70px;
+    margin-left: -90px;
+    margin-top: 1.5%;
     border-radius: 60px;
+    border: #ffffff solid 0.5px;
     box-shadow: 0 0 2px #888;
 }
 .icon-text.feature-box-2 h3 {
@@ -332,6 +333,33 @@ body {
     margin-bottom: 7px;
 }
 .icon-text.feature-box-2 .dis {
+    font-size: 14px;
+    color: #848484;
+}
+
+/* Second Video */
+
+.icon-text.feature-box-3 {
+    margin-left: 200px;
+}
+.icon-text.feature-box-3 .icon i{
+    padding: 15px 15px;
+    box-shadow: 0 0 2px #888;
+    font-size: 15px;
+    display: inline-block;
+    float: right;
+    margin-right: -70px;
+    margin-top: 1.5%;
+    border-radius: 60px;
+    border: #ffffff solid 0.5px;
+    box-shadow: 0 0 2px #888;
+}
+.icon-text.feature-box-3 h3 {
+    font-size: 18px;
+    margin-top: 11px;
+    margin-bottom: 7px;
+}
+.icon-text.feature-box-3 .dis {
     font-size: 14px;
     color: #848484;
 }
@@ -652,6 +680,33 @@ body {
 
     .calltoaction .btn{
         margin-top: 5%;
+    }
+
+    /* Second Video */
+
+    .icon-text.feature-box-3 {
+        margin-left:5px;
+    }
+    .icon-text.feature-box-3 .icon i{
+        padding: 15px 15px;
+        box-shadow: 0 0 2px #888;
+        font-size: 15px;
+        display: inline-block;
+        float: right;
+        margin-right: -10px;
+        margin-top: 1.5%;
+        border-radius: 60px;
+        border: #ffffff solid 0.5px;
+        box-shadow: 0 0 2px #888;
+    }
+    .icon-text.feature-box-3 h3 {
+        font-size: 18px;
+        margin-top: 11px;
+        margin-bottom: 7px;
+    }
+    .icon-text.feature-box-3 .dis {
+        font-size: 14px;
+        color: #848484;
     }
 
     .welcome .box {
