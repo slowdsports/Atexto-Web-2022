@@ -764,6 +764,13 @@ body {
         color: #ffffff;
         margin-top: 20px;
     }
+    .calltoaction .btn-2 {
+        padding: 10px 8px;
+    }
+
+    .nextbattle .btn-2 {
+        padding: 10px 22px;
+    }
 
     .skills .box-2 {
         margin-top: 30px;
