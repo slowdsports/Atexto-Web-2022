@@ -11,7 +11,7 @@ $(document).ready(function () {
                 'background',
                 'linear-gradient(135deg, rgba(22, 37, 43, 1) 0%, rgba(22, 37, 43, 1) 100%)'
             );
-            $('.navbar').css('padding', '25px 0');
+            // $('.navbar').css('padding', '25px 0');
             $('.navbar').css('background', 'linear-gradient(143deg, rgba(172,22,29,1) 0%, rgba(21,32,54,1) 80%)');
             $('.navbar .nav-link').css('color', '#ffffff');
             $('.navbar').css('box-shadow', '0px 5px 20px rgba(0, 0, 0, 0.1)');
@@ -20,7 +20,7 @@ $(document).ready(function () {
                 'background',
                 'linear-gradient(135deg, rgba(22, 37, 43, 0) 0%, rgba(22, 37, 43, 0) 100%)'
             );
-            $('.navbar').css('padding', '25px 0');
+            // $('.navbar').css('padding', '25px 0');
             $('.navbar .nav-link').css('color', '#daeaec');
             $('.navbar').css('box-shadow', '0px 5px 20px rgba(0, 0, 0, 0)');
         }
