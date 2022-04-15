@@ -19,24 +19,22 @@ body {
 }
 
 /*--------------------------------------------------
-[1. SVG]
---------------------------------------------------*/
-.logo{
-    width: 50%;
-    height: 50%;
-}
-.wc{
-    width: 50%;
-    height: 50%;
-}
-
-/*--------------------------------------------------
 [1. Start Navbar]
 --------------------------------------------------*/
 .navbar {
     background: #272a41;
     background: linear-gradient(135deg, rgba(42, 36, 43, 0) 0%, rgba(42, 36, 43, 0) 100%);
     padding: 25px 0;
+}
+
+.navbar .container{
+    min-width: 100%!important;
+}
+
+.navbar-brand .logo{
+    width: 40%;
+    height: 40%;
+    margin-left: 55px;
 }
 
 .navbar .nav-item {
@@ -82,7 +80,7 @@ body {
 [2. Start Slider]
 --------------------------------------------------*/
 .slider {
-    background: #000;
+    background-image: linear-gradient(143deg, rgba(172,22,29,1) 0%, rgba(21,32,54,1) 80%);
     height: 100vh;
 }
 
@@ -126,17 +124,16 @@ body {
     margin-top: 20px;
 }
 
-.slider .content h1 {
+.slider .content h1 .wc {
     margin: 0;
     padding: 0;
-    font-size: 70px;
-    font-weight: 800;
-    text-transform: uppercase;
+    width: 70%;
+    height: 70%;
 }
 
 .slider .content p {
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 1.6;
     font-family: 'Muli', sans-serif;
     color: #ffffff;
@@ -147,16 +144,17 @@ body {
     text-decoration: none;
     background: #ffffff;
     color: #162137;
-    padding: 10px 35px;
+    padding: 11px 27px;
     border-radius: 6px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 800;
     transition: all 0.5s ease-in-out;
 }
 
 .slider .btn:hover {
-    background: #ffffff;
-    color: #212332;
+    background: #AC161D;;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .slider .btn-2 {
@@ -165,6 +163,11 @@ body {
     color: #ffffff;
     margin-left: 5%;
     font-weight: 800;
+}
+
+.slider .btn-2:hover {
+    background: #ffffff;
+    color: #000;
 }
 
 /*--------------------------------------------------
@@ -190,13 +193,19 @@ body {
     font-weight: 800;
     transition: all 0.5s ease-in-out;
 }
+
+.calltoaction .btn:hover {
+    background: #AC161D;;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
 /*--------------------------------------------------
 [4. Start About]
 --------------------------------------------------*/
 .about {
     background-color: #181818;
     color: #ffffff;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .about .heading h2 {
@@ -247,9 +256,8 @@ body {
 --------------------------------------------------*/
 .video-area {
     background-color: #181818;
-    padding: 50px 0;
+    padding: 10px 0;
     color: #ffffff;
-    margin-top: -15px;
 }
 
 .video-area h2 {
@@ -271,7 +279,7 @@ body {
 .video-area p {
     font-size: 15px;
     font-weight: 400;
-    color: #d1e5e7;
+    color: #ffffff;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -296,6 +304,11 @@ body {
     color: #212332;
 }
 
+.video-area .mission-section .section-title h1 .br, .american{
+    width: 70%;
+    height: 70%;
+}
+
 .video-area .video-icon {
     position: relative;
 }
@@ -305,10 +318,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
-
-.video-area-2{
-    margin-top: -95px;
 }
 
 /* ADD */
@@ -329,35 +338,55 @@ body {
 }
 .icon-text.feature-box-2 h3 {
     font-size: 18px;
-    margin-top: 11px;
+    /* Descomentar para subtítulos */
+    /* margin-top: 11px;
+    */
     margin-bottom: 7px;
+
+    /* Comentar para subtítulos */
+    position: absolute!important;
+    margin-top: 18px;
+    /* Final de comentario */
 }
 .icon-text.feature-box-2 .dis {
     font-size: 14px;
     color: #848484;
 }
+.mt-0{
+    margin-top: 17px!important;
+}
 
 /* Second Video */
-
-.icon-text.feature-box-3 {
-    margin-left: 200px;
+.video-area-2 p{
+    text-align: right;
+    padding-right: 0;
 }
+
 .icon-text.feature-box-3 .icon i{
     padding: 15px 15px;
     box-shadow: 0 0 2px #888;
     font-size: 15px;
     display: inline-block;
     float: right;
-    margin-right: -70px;
     margin-top: 1.5%;
+    margin-left: 50px;
     border-radius: 60px;
     border: #ffffff solid 0.5px;
     box-shadow: 0 0 2px #888;
 }
 .icon-text.feature-box-3 h3 {
     font-size: 18px;
-    margin-top: 11px;
+    /* Descomentar para subtítulos */
+    /* margin-top: 11px;
+    */
     margin-bottom: 7px;
+    float: right!important;
+    text-align: right!important;
+
+    /* Comentar para subtítulos */
+    position: relative;
+    margin-top: 18px;
+    /* Final de comentario */
 }
 .icon-text.feature-box-3 .dis {
     font-size: 14px;
@@ -404,7 +433,11 @@ body {
     background-color: #181818;
     background-size: cover;
     background-attachment: fixed;
-    padding: 30px 0 0 0;
+    padding: 15px 0 0 0;
+}
+.clients .col-md-12{
+    margin-top: 1%;
+    margin-bottom: -3.5%;
 }
 
 /*--------------------------------------------------
@@ -419,7 +452,7 @@ body {
 .nextbattle h3 {
     font-size: 24px;
     font-weight: bold;
-    padding: 0 26px;
+    padding: 30px 26px;
 }
 .nextbattle .btn {
     text-decoration: none;
@@ -431,78 +464,24 @@ body {
     font-weight: 800;
     transition: all 0.5s ease-in-out;
 }
-.nextbattle .copyright {
-    padding-top: 35px;
-    margin-bottom: -10px;
-}
-/*--------------------------------------------------
-[18. Start Footer]
---------------------------------------------------*/
-.footer {
-    padding: 80px 0;
-    background: url("../img/bg/footer.png") center center no-repeat;
-    background-size: cover;
-}
 
-.footer .social-icons {
-    margin: 30px 0;
-    padding: 0;
-}
-
-.footer .social-icons a {
-    text-decoration: none;
-}
-
-.footer .social-icons i {
-    font-size: 15px;
-    line-height: 42px;
+.nextbattle .btn:hover {
+    background: #AC161D;;
     color: #ffffff;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 0.5px solid #ffffff;
-    border-radius: 50%;
-    margin: 0 3px;
-    transition: all 0.5s ease-in-out;
+    box-shadow: 0 100px 30px rgba(0, 0, 0, 0.1);
 }
 
-.footer .social-icons i:hover {
-    background: #F24259;
-    color: #ffffff;
-    border: 0.5px solid #F24259;
+.nextbattle .copyright{
+    margin-top: 3.5%;
+    margin-bottom: -3%;
 }
 
-.footer p {
-    font-size: 14px;
-    font-weight: 300;
-    color: #cacaca;
-    margin: 0;
-    padding: 0;
+.nextbattle .copyright .logo {
+    width: 6%;
+    height: 6%;
+    margin-left: 10px;
 }
 
-/*--------------------------------------------------
-[19. Start Page Loading]
---------------------------------------------------*/
-.no-js #loader {
-    display: none;
-}
-
-.js #loader {
-    display: block;
-    position: absolute;
-    left: 100px;
-    top: 0;
-}
-
-.se-pre-con {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url("../img/loader/Preloader_3.gif") center no-repeat #fff;
-}
 
 /*--------------------------------------------------
 [20. Start Media Query]
@@ -512,7 +491,20 @@ body {
 @media (max-width: 575.98px) {
     .navbar {
         padding: 30px;
-        background: #ffffff !important;
+        /* background: #ffffff !important; */
+    }
+
+    .navbar-brand{
+        margin: 0px 0px 0px 0px;
+        padding: 3px 0px;
+    }
+
+    .navbar .logo{
+        width: 60%;
+        height: 60%;
+        margin-left: 2px;
+        margin-right: -150px;
+        position: relative;
     }
 
     .navbar .nav-item {
@@ -545,6 +537,10 @@ body {
         color: #ffffff;
         margin-top: 20px;
     }
+    .slider .content h1 .wc{
+        width: 70%;
+        height: 70%;
+    }
     .slider .btn .btn-2{
         margin-top: 5%;
     }
@@ -553,86 +549,38 @@ body {
         margin-top: 5%;
     }
 
-    .welcome .box {
-        margin-bottom: 30px;
+    .video-area, .video-area-2{
+        text-align: center!important;
     }
 
-    .welcome {
-        padding: 130px 0 100px;
+    .mission-section .section-title h1 .br, .american{
+        width: 70%;
+        height: 70%;
     }
 
-    .skills .box-2 {
-        margin-top: 30px;
-    }
-
-    .about img {
-        margin-bottom: 30px;
-    }
-
-    .video-area img {
-        margin-top: 30px;
+    .clients .asrs{
         width: 100%;
+        height: 90%;
+        margin:3% 0px 3% 0px;
     }
 
-    .some-facts {
-        padding: 115px;
-    }
-
-    .some-facts .items {
-        margin: 15px 0;
-    }
-
-    .portfolio .button-group {
-        padding: 5px;
-    }
-
-    .more-details img {
-        margin-bottom: 30px;
-    }
-
-    .team {
-        padding: 130px 0 100px;
-    }
-
-    .team .box {
-        margin-bottom: 30px;
-    }
-
-    .price {
-        padding: 130px 0 100px;
-    }
-
-    .price .box {
-        margin-bottom: 30px;
-    }
-
-    .blog {
-        padding: 130px 0 100px;
-    }
-
-    .blog .box {
-        margin-bottom: 30px;
-    }
-
-    .clients {
-        padding: 130px 0 100px;
-    }
-
-    .clients img {
-        margin: 15px 0;
-    }
-
-    .contact .content .info {
-        margin-bottom: 30px;
+    .nextbattle .copyright .logo{
+        width: 14%;
+        height: 14%;
     }
 
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .logo{
+        width: 30%;
+        height: 30%;
+        margin-left: 5px;
+    }
     .navbar {
         padding: 30px;
-        background: #ffffff !important;
+        /* background: #ffffff !important; */
     }
 
     .navbar .nav-item {
@@ -640,7 +588,7 @@ body {
     }
 
     .navbar .nav-item .nav-link {
-        color: #555555;
+        color: #ffffff;
     }
 
     .navbar-dark .navbar-toggler {
@@ -660,7 +608,7 @@ body {
     .slider .content {
         position: absolute;
         top: 55%;
-        left: 50%;
+        left: 45%;
         transform: translate(-45%,-50%);
         color: #ffffff;
         margin-top: 20px;
@@ -683,26 +631,33 @@ body {
     }
 
     /* Second Video */
-
-    .icon-text.feature-box-3 {
-        margin-left:5px;
+    .video-area-2 p{
+        text-align: center;
+        padding-right: 0;
     }
+
+    .video-area-2 h1{
+        display:block;
+        justify-content: center!important;
+    }
+
     .icon-text.feature-box-3 .icon i{
-        padding: 15px 15px;
-        box-shadow: 0 0 2px #888;
-        font-size: 15px;
-        display: inline-block;
-        float: right;
-        margin-right: -10px;
-        margin-top: 1.5%;
-        border-radius: 60px;
-        border: #ffffff solid 0.5px;
-        box-shadow: 0 0 2px #888;
+        float: left;
+        margin-left: 0px;
     }
     .icon-text.feature-box-3 h3 {
-        font-size: 18px;
-        margin-top: 11px;
+        /* Descomentar para subtítulos */
+        /* margin-top: 11px;
+        */
+        margin-left: 90px;
         margin-bottom: 7px;
+        float: left!important;
+        text-align: left!important;
+
+        /* Comentar para subtítulos */
+        position: absolute!important;
+        margin-top: 18px;
+        /* Final de comentario */
     }
     .icon-text.feature-box-3 .dis {
         font-size: 14px;
@@ -776,6 +731,10 @@ body {
     .content .btn{
         margin: 5px;
     }
+    .nextbattle .copyright .logo{
+        width: 14%;
+        height: 14%;
+    }
 
 }
 
@@ -783,7 +742,7 @@ body {
 @media (max-width: 991.98px) {
     .navbar {
         padding: 30px;
-        background: linear-gradient(143deg, rgba(172,22,29,1) 0%, rgba(21,32,54,1) 80%) !important;
+        /* background: linear-gradient(143deg, rgba(172,22,29,1) 0%, rgba(21,32,54,1) 80%) !important; */
     }
 
     .navbar .nav-item {
@@ -791,7 +750,7 @@ body {
     }
 
     .navbar .nav-item .nav-link {
-        color: #555555;
+        color: #ffffff;
     }
 
     .navbar-dark .navbar-toggler {
@@ -866,8 +825,16 @@ body {
     .price .box {
         margin-bottom: 30px;
     }
+    .nextbattle .copyright .logo{
+        width: 14%;
+        height: 14%;
+    }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+    .nextbattle .copyright .logo{
+        width: 10%;
+        height: 10%;
+    }
     }
