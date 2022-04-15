@@ -33,13 +33,12 @@ body {
 }
 
 .navbar .container{
-    min-width: 100%!important;
+    min-width: 80%!important;
 }
 
 .navbar-brand .logo{
-    width: 40%;
-    height: 40%;
-    margin-left: 55px;
+    width: 35%;
+    height: 35%;
 }
 
 .navbar .nav-item {
@@ -132,8 +131,8 @@ body {
 .slider .content h1 .wc {
     margin: 0;
     padding: 0;
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
 }
 
 .slider .content p {
@@ -218,6 +217,7 @@ body {
     font-weight: 700;
     margin: 0;
     padding: 0;
+    margin-top: 20px;
 
 }
 
@@ -325,10 +325,6 @@ body {
     transform: translate(-50%,-50%);
 }
 
-.mission-section{
-    margin-top: -12%;
-}
-
 /* ADD */
 .icon-text.feature-box-2 {
     margin-left: 100px;
@@ -339,7 +335,7 @@ body {
     font-size: 15px;
     display: inline-block;
     float: left;
-    margin-left: -90px;
+    margin-left: -100px;
     margin-top: 1.5%;
     border-radius: 60px;
     border: #ffffff solid 0.5px;
@@ -355,6 +351,7 @@ body {
     /* Comentar para subtítulos */
     position: absolute!important;
     margin-top: 18px;
+    margin-left: -28px;
     /* Final de comentario */
 }
 .icon-text.feature-box-2 .dis {
@@ -371,6 +368,10 @@ body {
     padding-right: 0;
 }
 
+.video-area-2 #video2{
+    margin-bottom: 40px;
+}
+
 .icon-text.feature-box-3 .icon i{
     padding: 15px 15px;
     box-shadow: 0 0 2px #888;
@@ -378,7 +379,7 @@ body {
     display: inline-block;
     float: right;
     margin-top: 1.5%;
-    margin-left: 50px;
+    margin-left: 25px;
     border-radius: 60px;
     border: #ffffff solid 0.5px;
     box-shadow: 0 0 2px #888;
@@ -456,7 +457,7 @@ body {
     background: rgb(172,22,29);
     background: linear-gradient(143deg, rgba(172,22,29,1) 0%, rgba(21,32,54,1) 80%);
     color: #FFFFFF;
-    padding: 46px 0;
+    padding: 36px 30%;
 }
 .nextbattle h3 {
     font-size: 24px;
@@ -498,6 +499,15 @@ body {
 .modal-content{
     background-color: #444444;
     color: #ffffff;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    border-radius: 15px;
+}
+
+.modal-header{
+    border-bottom: 0px!important;
 }
 
 .modal-header h5{
@@ -523,7 +533,7 @@ body {
     color: #ffffff!important;
 }
 
-.modal-body form input{
+.modal-body form input[type="text"],input[type="email"],input[type="tel"],input[type="submit"]{
     height: 42px;
     width: 100%;
     border-radius: 6px;
@@ -531,8 +541,18 @@ body {
     border: #ffffff 1px solid;
 }
 
+.modal-body form .input {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
 .modal-body form input[type="checkbox"]{
-    height: 15px!important;
+   margin-top: 5px;
+}
+
+.modal-body form .hs-dependent-field .input {
+    margin-left: -40px;
+    margin-bottom: -20px;
 }
 
 .modal-body form input[type="submit"]{
@@ -549,6 +569,7 @@ body {
     font-weight: 800;
     transition: all 0.5s ease-in-out;
     text-align: center;
+    margin-top: 5%;
 }
 
 .modal-body form .hs-button:hover {
@@ -557,6 +578,18 @@ body {
     color: #ffffff;
     border: 0px;
     box-shadow: 0 100px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-body form p{
+    font-size: 10px;
+}
+
+.modal-body ul li{
+    list-style: none;
+}
+
+.modal-body form .legal-consent-container .hs-richtext p{
+    margin-bottom: -2px;
 }
 
 
@@ -631,7 +664,7 @@ body {
     }
 
     .mission-section{
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     .mission-section .section-title h1 .br, .american{
@@ -703,6 +736,10 @@ body {
         text-transform: uppercase;
     }
 
+    .icon-text.feature-box-2 h3 {
+        margin-left: -35px;
+    }
+
     .slider .btn2{
         margin-top: 5%;
     }
@@ -730,7 +767,7 @@ body {
         /* Descomentar para subtítulos */
         /* margin-top: 11px;
         */
-        margin-left: 90px;
+        margin-left: 65px;
         margin-bottom: 7px;
         float: left!important;
         text-align: left!important;
