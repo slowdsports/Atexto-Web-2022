@@ -678,7 +678,7 @@ body {
 
     .slider .video {
         object-fit: cover;
-        height: 90%;
+        height: 85%;
     }
 
     .slider .content {
