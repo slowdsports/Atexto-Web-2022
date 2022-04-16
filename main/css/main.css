@@ -202,6 +202,10 @@ body {
     color: #FFFFFF;
     padding: 46px 0;
 }
+.calltoaction .container{
+    margin: auto;
+    max-width: 800px;
+}
 .calltoaction h3 {
     font-size: 24px;
     font-weight: bold;
@@ -477,9 +481,13 @@ body {
     background: rgb(172,22,29);
     background: linear-gradient(143deg, rgba(172,22,29,1) 0%, rgba(21,32,54,1) 80%);
     color: #FFFFFF;
-    padding: 36px 30%;
+    padding: 30px 0;
 }
 
+.nextbattle .container{
+    margin: auto;
+    max-width: 800px;
+}
 
 .nextbattle h3 {
     font-size: 24px;
@@ -500,7 +508,7 @@ body {
     font-size: 13px;
     font-weight: 800;
     transition: all 0.5s ease-in-out;
-    margin-top: 25%;
+    margin-top: 20%;
 }
 
 .nextbattle .btn:hover {
@@ -515,8 +523,8 @@ body {
 }
 
 .nextbattle .copyright .logo {
-    width: 6%;
-    height: 6%;
+    width: 10%;
+    height: 10%;
     margin-left: 10px;
 }
 
@@ -686,23 +694,41 @@ body {
         margin-top: 5%;
     }
 
+    .previous-editions{
+        margin-bottom: -30px;
+    }
+
     .video-area, .video-area-2{
         text-align: center!important;
     }
 
     .mission-section{
         margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    .mission-section .section-title h1 .br, .american{
+    .mission-section .section-title h1 .br{
         width: 70%;
         height: 70%;
+    }
+
+    .mission-section .section-title h1 .american{
+        width: 70%;
+        height: 70%;
+    }
+
+    /* .clients .asrs{
+        margin-bottom: 10px;
+    } */
+
+    .mission-section .section-title h1 {
+        margin-top: 20%;
     }
 
     .clients .asrs{
         width: 100%;
         height: 90%;
-        margin:3% 0px 3% 0px;
+        margin:3% 0px 35% 0px;
     }
 
     .nextbattle .btn{
@@ -711,8 +737,8 @@ body {
     }
 
     .nextbattle .copyright .logo{
-        width: 14%;
-        height: 14%;
+        width: 15%;
+        height: 15%;
     }
 
 }
@@ -831,8 +857,8 @@ body {
     }
 
     .nextbattle .copyright .logo{
-        width: 14%;
-        height: 14%;
+        width: 10%;
+        height: 10%;
     }
 
     .close span {
@@ -887,13 +913,12 @@ body {
     }
 
     .nextbattle .btn{
-        margin-top: 95%;
         margin-bottom: 8%;
     }
 
     .nextbattle .copyright .logo{
-        width: 14%;
-        height: 14%;
+        width: 8%;
+        height: 8%;
     }
     .close span {
         visibility:visible;
@@ -904,7 +929,7 @@ body {
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
     .nextbattle .copyright .logo{
-        width: 12%;
-        height: 12%;
+        width: 10%;
+        height: 10%;
     }
     }
