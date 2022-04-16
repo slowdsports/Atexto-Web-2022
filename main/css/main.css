@@ -676,9 +676,8 @@ body {
         margin-bottom: 20px;
     }
 
-    .slider .video {
-        object-fit: cover;
-        height: 85%;
+    .slider {
+        margin-bottom: -135px;
     }
 
     .slider .content {
