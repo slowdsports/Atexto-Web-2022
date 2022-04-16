@@ -676,8 +676,8 @@ body {
         margin-bottom: 20px;
     }
 
-    .slider {
-        margin-bottom: -135px;
+    .slider:before{
+        margin-bottom: -150px;
     }
 
     .slider .content {
