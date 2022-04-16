@@ -676,8 +676,9 @@ body {
         margin-bottom: 20px;
     }
 
-    .slider {
-        height: 90vh;
+    .slider .video {
+        object-fit: cover;
+        height: 90%;
     }
 
     .slider .content {
