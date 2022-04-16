@@ -676,6 +676,10 @@ body {
         margin-bottom: 20px;
     }
 
+    .slider {
+        height: 90vh;
+    }
+
     .slider .content {
         position: absolute;
         top: 55%;
