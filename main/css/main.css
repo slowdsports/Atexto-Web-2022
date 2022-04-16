@@ -690,8 +690,12 @@ body {
         margin-top: 5%;
     }
 
-    .calltoaction .btn{
+    .calltoaction{
         margin-top: -5%;
+    }
+
+    .calltoaction .btn{
+        margin-top: 5%;
     }
 
     .previous-editions{
