@@ -674,6 +674,12 @@ body {
         margin-bottom: 20px;
     }
 
+    .slider .video {
+        object-fit: cover;
+        height: 150%;
+        width: 100%;
+    }
+
     .slider .content {
         position: absolute;
         top: 55%;
@@ -688,10 +694,6 @@ body {
     }
     .slider .btn .btn-2{
         margin-top: 5%;
-    }
-
-    .calltoaction{
-        margin-top: -15%;
     }
 
     .calltoaction .btn{
