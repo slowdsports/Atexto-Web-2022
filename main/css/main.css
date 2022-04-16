@@ -51,15 +51,35 @@ body {
     padding: 0;
     margin: 0;
     font-size: 14px;
-    color: #daeaec;
+    color: #ffffff;
     font-weight: 500;
-    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  transition: all 0.5s ease-in-out;
 }
 
-.navbar .nav-item .nav-link:hover {
-    /* color: #AC161D !important; */
-    text-decoration: underline;
+/*effect-underline*/
+.navbar .nav-item .nav-link:after {
+	content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale(0,1);
+        transform: scale(0,1);
+}
 
+.navbar .nav-item .nav-link:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
 .navbar .btn {
@@ -459,11 +479,18 @@ body {
     color: #FFFFFF;
     padding: 36px 30%;
 }
+
+
 .nextbattle h3 {
     font-size: 24px;
     font-weight: bold;
     padding: 30px 26px;
 }
+
+.nextbattle .box-2{
+    margin-top: 2.5%;
+}
+
 .nextbattle .btn {
     text-decoration: none;
     background: #ffffff;
@@ -473,6 +500,7 @@ body {
     font-size: 13px;
     font-weight: 800;
     transition: all 0.5s ease-in-out;
+    margin-top: 25%;
 }
 
 .nextbattle .btn:hover {
@@ -519,10 +547,8 @@ body {
 }
 
 .close span {
-    background-color: #ffffff;
-    color: #444444;
-    border-radius: 16px;
     padding: 0 6px;
+    visibility: hidden;
 }
 
 .modal-content .modal-body{
@@ -539,6 +565,7 @@ body {
     border-radius: 6px;
     background: transparent;
     border: #ffffff 1px solid;
+    color: #ffffff;
 }
 
 .modal-body form .input {
@@ -547,7 +574,7 @@ body {
 }
 
 .modal-body form input[type="checkbox"]{
-   margin-top: 5px;
+    margin-top: 5px;
 }
 
 .modal-body form .hs-dependent-field .input {
@@ -678,6 +705,11 @@ body {
         margin:3% 0px 3% 0px;
     }
 
+    .nextbattle .btn{
+        margin-top: 0px!important;
+        margin-bottom: 8%;
+    }
+
     .nextbattle .copyright .logo{
         width: 14%;
         height: 14%;
@@ -788,9 +820,24 @@ body {
     .content .btn{
         margin: 5px;
     }
+
+    .nextbattle h3{
+        min-width: 280px;
+    }
+
+    .nextbattle .btn{
+        margin-top: 0px;
+        margin-bottom: 8%;
+    }
+
     .nextbattle .copyright .logo{
         width: 14%;
         height: 14%;
+    }
+
+    .close span {
+        visibility:visible;
+        color: #ffffff!important;
     }
 
 }
@@ -839,19 +886,25 @@ body {
         padding: 10px 8px;
     }
 
-    .nextbattle .btn-2 {
-        padding: 10px 22px;
+    .nextbattle .btn{
+        margin-top: 95%;
+        margin-bottom: 8%;
     }
+
     .nextbattle .copyright .logo{
         width: 14%;
         height: 14%;
+    }
+    .close span {
+        visibility:visible;
+        color: #ffffff!important;
     }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
     .nextbattle .copyright .logo{
-        width: 10%;
-        height: 10%;
+        width: 12%;
+        height: 12%;
     }
     }
